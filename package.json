@@ -1,19 +1,21 @@
 {
   "name": "avator_ornament",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a project with face-api",
   "main": "rollup.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.config.js --watch",
     "build": "rollup -c rollup.config.js"
   },
-  "author": "",
+  "repository": "https://github.com/liuyayaya/avator_ornament.git",
+  "author": "liuya",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.0.0",
     "jquery": "^3.4.1",
+    "rollup": "^1.28.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-json": "^4.0.0",
