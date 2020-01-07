@@ -47,17 +47,19 @@ export default {
      */
     output: { 
         file: 'dist/main.min.js',
-        format: 'umd',
+        format: 'cjs',
         sourceMap: 'inline',
         globals: {
             jquery: '$'
         }
     },
+    cache: true,
     /* 
      * 调用插件
      */
     plugins: [
         resolve(),
+        commonjs(),
         json(),
         babel({
             exclude: 'node_modules/**',
@@ -78,8 +80,6 @@ export default {
             plugins: ['@babel/plugin-transform-runtime'],
             runtimeHelpers: true 
           }),
-        commonjs(),
-        uglify()
     ],
     /* 
      * 有些场景下，虽然我们使用了resolve插件，但我们仍然需要某些库保持外部引用状态，这时我们就需要使用external属性，告诉rollup.js哪些是外部的类库

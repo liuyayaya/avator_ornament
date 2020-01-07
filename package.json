@@ -5,7 +5,7 @@
   "main": "rollup.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rollup -c rollup.config.js --watch",
+    "dev": "rollup -c rollup.config.watch.js --watch",
     "build": "rollup -c rollup.config.js"
   },
   "repository": "https://github.com/liuyayaya/avator_ornament.git",
@@ -14,6 +14,9 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.7",
     "jquery": "^3.4.1",
     "rollup": "^1.28.0",
     "rollup-plugin-babel": "^4.3.2",
@@ -23,6 +26,7 @@
     "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
+    "core-js": "^3.6.2",
     "face-api.js": "^0.22.0"
   }
 }
