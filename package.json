@@ -17,7 +17,7 @@
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/polyfill": "^7.7.0",
     "@babel/runtime": "^7.7.7",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rollup": "^1.28.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
